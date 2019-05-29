@@ -3,8 +3,8 @@ jobs:
   build:
     working_directory: ~/Dummy
     docker:
-      - image: circleci/node: 8.11.1
+      - image: circleci/node:8.11.1
       steps:
       - checkout
-      run: yarn
-      run: yarn test
+      - run: yarn
+      - run: yarn test
